@@ -14,7 +14,7 @@ def get_network(input_length, output_shape, embeddings_matrix, tokenizer, embedd
 #     model.add(LSTM(10, dropout=0.2, return_sequences=True))
 #     model.add(LSTM(10, dropout=0.2, return_sequences=True))
 #     model.add(LSTM(10, dropout=0.2, return_sequences=True))
-    model.add(LSTM(40, dropout=0.2))
+    model.add(LSTM(20, dropout=0.2))
     model.add(Dense(output_shape, activation='softmax'))
     
     model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=[categorical_accuracy])
